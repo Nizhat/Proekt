@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/angular-csp.css">
+	<link rel="stylesheet" href="css/stylesheets.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/angular-route.js"></script>
+	<script src="js/angular-local-storage.js"></script>
+</head>
+
+
+<body  style="padding-left: 20px; background-color: #E0F8EC" ng-app = "NTPApp"  ng-controller = "AppController" >
+
+    <div>
+        <a href="#!/samolet" style="font-size: 20px; ">Добавить самолет</a>
+        <div ng-view></div>
+
+        <div>
+            <h1>Добавление рейса</h1>
+            <table>
+                <tr>
+                    <td>Номер рейса:</td>
+                    <td><input type = "text" ng-model = "nomer_Reisa" class = "inputText"></td>
+                </tr>
+                <tr>
+                    <td>Авикомпания:</td>
+                    <td><input type = "text" ng-model = "aviaKompaniya_Reisa" class = "inputText"></td>
+                </tr>
+                <tr>
+                    <td>Количество пассажиров:</td>
+                    <td><input type="text" ng-model="kolPassazhirov_reisa" class="inputText"></td>
+                </tr>
+            </table>
+            <label class = "message_Reisa">{{message_Reisa}}</label><br>
+            <input type = "button" value = "Добавить рейс" ng-click = "addReis()" class = "button">
+        </div>
+
+        <div>
+            <h1>Информация о рейса</h1>
+            <table>
+                <tr>
+                    <td>Введите номер рейса:</td>
+                    <td><input type="text" ng-model="reis_model" list="reisList" class="dropDownList"></td>
+                </tr>
+                <tr>
+                    <td>Авиакомпания рейса:</td>
+                    <td><label class="infoLabel">{{aviaKompaniya}}</label></td>
+                </tr>
+                <tr>
+                    <td>Тип самолета:</td>
+                    <td><label class="infoLabel">{{tipSamoleta}}</label></td>
+                </tr>
+                <tr>
+                    <td>Бортовой номер:</td>
+                    <td><label class="infoLabel">{{bortNomer}}</label></td>
+                </tr>
+                <tr>
+                    <td>Количество самолетов:</td>
+                    <td><label class="infoLabel">{{samoletCounter}}</label></td>
+                </tr>
+            </table>
+            <input type="button" value="Вывести информацию о рейсе" ng-click="print()">
+            <br>Список самолетов:<br><br>
+            <pre>{{samoleti}}</pre>
+        </div>
+
+
+
+    </div>
+    <datalist id = "reisList"></datalist>
+
+
+    <!--
+         <div>
+            <h1>Средний GPA группы</h1>
+            <table>
+                <tr>
+                    <td>Группа:</td>
+                    <td><input type = "text" list = "groupsList" class = "dropDownList"></td>
+                </tr>
+            </table>
+            <label class = "message_Gpa">{{message_Gpa}}</label><br>
+            <input type = "button" value = "Посчитать средний GPA" ng-click = "sredniyGpa()" class = "button">
+        </div>
+
+    <div>
+        <h1>Удаление эдвайзера</h1>
+        <table>
+            <tr>
+                <td>Название группы:</td>
+                <td><input type = "text" list = "groupsList" class = "inputText"></td>
+            </tr>
+        </table>
+        <label class = "messageUdalPrepod">{{messageUdalPrepod}}</label><br>
+        <input type = "button" value = "Удалить эдвайзера" ng-click = "udalitPrepoda()" class = "button">
+    </div>-->
+
+
+</body>	
+</html>

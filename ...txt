@@ -1,0 +1,103 @@
+
+
+
+
+
+
+   
+    // $scope.udalitPrepoda = function()
+    // {
+    //     /*
+    //     if ($scope.group === undefined)
+    //     {
+    //         $scope.message_Udal_Prepod = "Пожалуйста, заполните все поля.";
+    //         return;
+    //     }*/
+        
+    //     var groupIndex;
+    //     for (var i = 0; i < groups.length; i++)
+    //         if (groups[i].getName() === $scope.group)
+    //             groupIndex = i;
+    //     if (groupIndex === undefined)
+    //     {
+    //         $scope.message_Udal_Prepod  = "Выбранная группа не найдена.";
+    //         return;
+    //     }
+        
+    //     groups[groupIndex].removeTeacher();
+    //     $scope.message_Udal_Prepod  = "Эдвайзер удален из группы " + $scope.group + ".";
+    // }
+
+
+
+    // $scope.selectChange = function() // вызывается при выборе новой группы из списка
+    // {
+    //     var groupIndex;
+    //     for (var i = 0; i < groups.length; i++)
+    //         if (groups[i].getName() === $scope.group)
+    //             groupIndex = i;
+    //     if (groupIndex === undefined)
+    //     {
+    //         $scope.message = "Выбранная группа не найдена.";
+    //         return;
+    //     }
+        
+    //     // заполняем datalist studentsList
+    //     var options = "";
+    //     var students = groups[groupIndex].getStudents();
+    //     for (var i = 0; i < students.length; i++)
+    //     {
+    //         console.log(students[i].getSurname());
+    //         options += "<option value = " + students[i].getSurname() + "&#32;" + students[i].getName() + " />";
+    //     }
+    //     document.getElementById("studentsList").innerHTML = options;
+    // }
+    
+    // $scope.udalitStudenta = function()
+    // {
+    //     /*
+    //     if ($scope.group === undefined || $scope.name === undefined)
+    //     {
+    //         $scope.message_Udal_Stud = "Пожалуйста, заполните все поля.";
+    //         return;
+    //     }*/
+        
+    //     var groupIndex;
+    //     for (var i = 0; i < groups.length; i++)
+    //         if (groups[i].getName() === $scope.group)
+    //             groupIndex = i;
+        
+    //     var students = groups[groupIndex].getStudents();
+    //     var studentId;
+    //     for (var i = 0; i < students.length; i++)
+    //         if (students[i].getSurname() + " " + students[i].getName() === $scope.name)
+    //         {
+    //             studentId = students[i].getId();
+    //             groups[groupIndex].removeStudentById(studentId);
+    //             $scope.message_Udal_Stud = "Студент удален.";
+    //             return;
+    //         }
+    //     $scope.message_Udal_Stud = "Студент не найден.";
+    // }
+
+    // document.getElementById("groupsList").innerHTML = localStorageService.get('key');
+    // $scope.sredniyGpa = function(){
+    //     if ($scope.group === undefined)
+    //     {
+    //         $scope.message_Gpa = "Пожалуйста, заполните все поля.";
+    //         return;
+    //     }
+    //
+    //     var groupIndex;
+    //     for (var i = 0; i < groups.length; i++)
+    //         if (groups[i].getName() === $scope.group)
+    //             groupIndex = i;
+    //     if (groupIndex === undefined)
+    //     {
+    //         $scope.message_Gpa = "Выбранная группа не найдена.";
+    //         return;
+    //     }
+    //
+    //     $scope.message_Gpa = "Средний GPA группы: " + groups[groupIndex].getAverageGpa() + ".";
+    // }
+

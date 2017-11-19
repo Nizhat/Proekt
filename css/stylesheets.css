@@ -1,0 +1,53 @@
+body
+{
+	//background-image: texture.jpg;
+}
+
+td
+{
+	vertical-align: left;
+}
+
+form
+{
+	background-color: white;
+	width: 390px;
+	padding: 20px;
+	margin: 20px 0px 20px 20px;
+	border-radius: 10px;
+}
+
+h1
+{
+	font-family: Verdana;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.inputText, .dropDownList, .infoLabel
+{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.button
+{
+	height: 50px;
+	width: 15%;
+	background-color: white;
+	color: black;
+	border: none;
+	margin-left: 20px;
+}
+
+.message
+{
+	font-style: italic;
+	color: black;
+	margin-top: 15px;
+}
+
+pre
+{
+	background-color: white;
+}
