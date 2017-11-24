@@ -1,0 +1,22 @@
+<div style="background-color: #045FB4; color: white; width: 450px; border: 1px solid #333; margin-top: 20px; padding-bottom: 20px; padding-left: 10px;">
+    <div>
+        <h1>Создание полосы</h1>
+        <tr>
+            <td>
+                <label class = "message">{{createPolosa_message}}</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Рейс:</td>
+            <td><input type="text" list="reisList" ng-model="reis_model" class="dropDownList" style="color: #000000"></td>
+        </tr>
+        <input type = "button" value = "Создать полосу" ng-click = "createPolosa()" class = "button" style="width: 150px;">
+    </div>
+    <datalist id = "reisList"></datalist>
+    <datalist id="polosaList">
+        <option>A</option>
+        <option>Б</option>
+        <option>В</option>
+        <option>Г</option>
+    </datalist>
+</div><br>

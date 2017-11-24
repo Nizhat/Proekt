@@ -1,4 +1,4 @@
-<div style="background-color: #F5BCA9;">
+<div style="background-color: #F5BCA9; width: 450px; border: 1px solid #333; margin-top: 20px; padding-bottom: 20px; padding-left: 10px;">
     <h1>Добавление самолета</h1>
     <table>
         <tr>
@@ -13,8 +13,18 @@
             <td>Рейс:</td>
             <td><input type="text" list="reisList" ng-model="reis_model" class="dropDownList"></td>
         </tr>
+        <tr>
+            <td>Статус состояния:</td>
+            <td><input type="text" list="statusList" ng-model="status_type" class="dropDownList"></td>
+        </tr>
     </table>
     <label class = "message_Samolet">{{message_Samolet}}</label><br>
-    <input type = "button" value = "Добавить самолет" ng-click = "dobavitSamolet()" class = "button">
+    <label class="status_message">{{status_message}}</label><br>
+    <input type = "button" value = "Добавить самолет" ng-click = "dobavitSamolet()" class = "button" style="width: 150px;">
     <datalist id = "reisList"></datalist>
+    <datalist id="statusList">
+        <option>Подготовка</option>
+        <option>Полет</option>
+        <option>Выполнение</option>
+    </datalist>
 </div><br>
